@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crazy Meal - Home</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Crazy Meal</h1>
+    <nav>
+      <a href="menu.html">Menu</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="form-section card">
+      <h2>Add a New Request</h2>
+      <form id="orderForm">
+        <label>Name of The Meal
+          <input type="text" id="mealName" required />
+        </label>
+
+        <label>Meal Price
+          <input type="number" id="mealPrice" required min="0" step="0.01" />
+        </label>
+
+        <label>Picture oh The Meal
+          <input type="file" id="mealImage" accept="image/*" />
+        </label>
+
+        <div class="form-actions">
+          <button type="submit">Add a Request</button>
+          <button type="button" id="clearAllBtn" class="danger">مسح كل الطلبات</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="list-section card">
+      <h2>Order List</h2>
+      <div id="ordersContainer">
+        <!--  Insert Orders-->
+        <table id="ordersTable">
+          <thead>
+            <tr>
+              <th>image</th>
+              <th>Name of The Meal</th>
+              <th>price</th>
+              <th>delete</th>
+            </tr>
+          </thead>
+          <tbody id="ordersList">
+            <!-- Request Rows  -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><span id="year"></span></p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

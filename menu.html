@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crazy Meal - Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>List Crazy Meal</h1>
+    <nav>
+      <a href="index.html">Return to The Home Page</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="menu-list card">
+      <article class="menu-item">
+        <img src="images/chicken1.jpg" alt="Chicken 1">
+        <h3>Fried Chicken</h3>
+        <p>5.99$</p>
+      </article>
+
+      <article class="menu-item">
+        <img src="images/chicken2.jpg" alt="Chicken 2">
+        <h3>Spicy Chicken</h3>
+        <p>6.50$</p>
+      </article>
+
+      <!--  Add Other Items -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><span id="year2"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById('year2').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
